@@ -1,0 +1,14 @@
+<template name="table">
+  {{#each myCollection}}
+    {{> tr}}
+  {{/each}}
+</template>
+
+<template name="tr">
+  <td class="activate">Activate</td>
+  <td>
+    {{#if active}}
+    <span class="glyphicon glyphicon-ok"></span>
+    {{/if}}
+  </td>
+</template>

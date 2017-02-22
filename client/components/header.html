@@ -1,0 +1,26 @@
+<template id="" name="header">
+	<div class="header">
+		
+		<div class="header__left-container">
+			<div class="header__left-search-icon-container">
+				<i class="material-icons header__left-search-icon">search</i>
+			</div>
+		
+			<div class="header__search-bar-container">
+			<input class="header__search-bar" type="text" placeholder="Search">
+			</div>
+		</div>
+		
+
+		<div class="header__right-container">
+			<i class="material-icons header__notification-icon">notifications</i>
+			<div class="header__user-name">{{name}}</div>
+			<i class="material-icons header__arrow-dropdown">arrow_drop_down</i>
+			<div class="header__profile-picture-container">
+				<img height="24" width="24" src="{{imageUrl}}">
+			</div>
+
+		</div>
+
+	</div>	
+</template>

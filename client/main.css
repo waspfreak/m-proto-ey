@@ -1,0 +1,435 @@
+
+@import url("css/lon-ey-mobility-prototype.webflow.css");
+@import url("css/normalize.css");
+@import url("css/webflow.css");
+
+
+/* CSS declarations go here */
+
+body{
+  min-height: 100%;
+  background: linear-gradient(to bottom,  rgba(243, 243, 243, 0.9) 0%, rgba(71, 71, 71, 0.5) 100%);
+  font-family: 'Eyinterstate regular', sans-serif;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.home{
+  background: #fff;
+}
+.card{
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24), 0 0 2px 0 rgba(0, 0, 0, 0.12);
+  border-style: solid;
+  border-width: 0px;
+  border-image-source: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) 80%, rgba(0, 0, 0, 0.02) 95%, rgba(0, 0, 0, 0.04));
+  border-image-slice: 1;
+  margin-bottom: 21px;
+  border-radius: 2px;
+}
+
+.ey-card-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ey-card-list_item{
+  color: #336699;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 14px;
+  padding-right: 14px;
+  position: relative;
+}
+
+.ey-card-list_item.last{
+  border-bottom: none;
+  padding-bottom: 18px;
+}
+
+.ey-card-list_item a{
+  color: #336699;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  text-decoration: none;
+}
+
+/*LEFT NAV*/
+a.ey-nav-link-bloc.w-inline-block:hover .material-icons {
+  color: #ffe600;
+}
+.ey-sub-nav-link-bloc:hover span {
+  color: #ffe600;
+}
+.ey-nav-link-text span {
+  float: left;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+.w-container{
+  width: 1024px;
+}
+
+a.ey-nav-link-bloc.w-inline-block:hover .material-icons {
+  color: #ffe600;
+}
+.ey-sub-nav-link-bloc:hover span {
+  color: #ffe600;
+}
+.ey-nav-link-text span {
+  float: left;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+
+.search-bar {
+  background: rgba(51, 51, 51, 0.7);
+  height: 45px;
+  margin-left: -22px;
+  width: 106%;
+}
+
+.w-button {
+  display: inline-block;
+  padding: 9px 15px;
+  border: 0;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+
+.ey-login-header-image {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.w-inline-block {
+  max-width: 100%;
+  display: block;
+}
+.ey-main-right-col-1.w-col.w-col-12 {
+  padding-right: 24px;
+}
+
+.material-icons.warning.right-icon {
+  display: block;
+  float: right;
+}
+i.warning{
+  color: #f04c3e;
+}
+
+/*Modal*/
+/* overlay styles, all needed */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.overlay.hidden.show {
+  display: block;
+}
+
+html, body{
+  min-height: 100%;
+}
+body{
+  position: relative;
+}
+
+.modal-box{
+  opacity: 0.99;
+  width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -219px;
+  z-index: 220;
+  height: 400px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.modal-content.drag-and-drop {
+	width: 600px;
+	height: 258px;
+	background-color: rgba(0, 0, 0, 0.02);
+  border-top: 1px dashed #979797;
+  border-bottom: 1px dashed #979797;
+  margin-top: 16px;
+  position: relative;
+}
+
+.material-icons.icon-right{
+  display: block;
+  float: right;
+  margin-top: -11px;
+}
+
+.modal-title {
+  padding-top: 30px;
+  border-bottom: 1px solid #ffe600;
+  font-size: 16px;
+  line-height: 0px;
+  text-align: left;
+  color: #333333;
+  height: 56px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.modal-btn{
+  width: 220px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20%;
+  text-decoration: none;
+  color: #336699;
+  padding-top: 6px;
+
+}
+.modal-box .dni{
+  position: absolute;
+  top: 26px;
+  width: 50%;
+  left: 24%;
+}
+
+.modal-box .dni.hidden{
+  display: none;
+}
+
+.box1.hidden {
+  display: none;
+}
+
+.modal-box .dni.hidden.show{
+  display: block;
+}
+
+.btn-container {
+  width: 39%;
+  display: flex;
+  float: right;
+  padding-top: 18px;
+}
+.btn-container .ey-btn-grey{
+  color: #fff;
+  font-size: 12px;
+  width: 96px;
+}
+
+.btn-container .ey-primary-button{
+  font-size: 12px;
+  padding: 7px 18px;
+  width: auto;
+  height: 36px;
+  width: 96px;
+}
+
+.modal-done {
+  width: 100%;
+  position: absolute;
+  z-index: 200;
+  width: 600px;
+  height: 400px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.modal-done.hidden {
+  display: none;
+
+}
+
+.modal-done {
+  display: block;
+  text-align: center;
+  padding-top: 20%;
+}
+
+.modal-done.show {
+  display: block;
+}
+
+.overlay.hidden.show.close {
+  display: none;
+}
+
+.ey-employee-status-card__alert{
+  display: block;
+}
+
+.ey-employee-status-card__alert.hidden {
+  display: none;
+}
+
+.card-imi-1{
+  display: block;
+}
+.card-imi-1.hidden{
+  display: none;
+}
+
+.card-imi-2.hidden{
+  display: none;
+}
+
+.card-imi-2.show{
+  display: block;
+}
+
+.pending-before{
+  display: block;
+}
+.pending-before.hidden{
+  display: none;
+}
+.pending-after{
+  display: none;
+}
+.pending-after.show{
+  display: block;
+}
+
+.check-box_icon i{
+  color: #39b54a;
+  font-size: 50px;
+}
+.modal-done .check-box_txt{
+  margin-top: 16px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+button.ey-primary-button.btn-done {
+  font-size: 12px;
+  padding: 7px 18px;
+  width: auto;
+  height: 36px;
+  position: absolute;
+  bottom: 24px;
+  right: 22px;
+}
+
+.card-assistant .ey-card-item-content-right-icon {
+  top: 14px;
+  right: 0;
+}
+
+.ey-card-contact-item {
+  height: 72px;
+  padding-bottom: 0;
+  padding-top: 15px;
+}
+
+.header {
+  background-color: rgba(51, 51, 51, 0.7);
+  height: 48px;
+  margin-left: -24px;
+  color: #f0f0f0;
+  font-family: 'Eyinterstate light', sans-serif;
+}
+
+.header__left-container {
+  float: left;
+  position: relative;
+  width: 562px;
+  height: 100%;
+  border-right: 1px solid #f0f0f0;
+}
+
+.header__right-container {
+  float: right;
+  position: relative;
+  width: 225px;
+  height: 100%;
+}
+
+.header__left-search-icon {
+  position: absolute;
+  right: 16px;
+  top: 12px;
+}
+
+.header__search-bar-container {
+  float: right;
+  margin-right: 48px;
+  margin-top: 14px;
+}
+
+.header__search-bar {
+  text-align: right;
+  font-size: 14px;
+  border: transparent;
+  background-color: transparent;
+}
+
+.header__search-bar:active, .header__search-bar:focus {
+  border: transparent;
+  outline: none;
+}
+
+.header__search-bar::-webkit-input-placeholder {
+    color: #f0f0f0;
+}
+
+.header__notification-icon {
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+.header__user-name {
+  position: absolute;
+  text-align: right;
+  width: 96px;
+  top: 14px;
+  right: 80px;
+}
+
+.header__arrow-dropdown {
+  position: absolute;
+  text-align: right;
+  width: 96px;
+  top: 13px;
+  right: 57px;
+}
+
+.header__profile-picture-container {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  overflow: hidden;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.header__profile-picture {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+

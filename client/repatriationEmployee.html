@@ -1,0 +1,39 @@
+<template name="repatriationEmployee">
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+
+      <div class="col-nav-left w-col w-col-3">
+        {{> navLeft}}
+      </div><!-- /.col-nav-left w-col w-col-3 -->
+
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+          <div class="ey-main-header--container">
+              {{> header}}
+          </div>
+          <div class="">
+            {{>cardEmployeeStatusRepatriation}}
+          </div>
+          <div class="ey-main-right-row w-row">
+            <div class="ey-main-right-col-1 w-col w-col-8">
+              <div class="div-righ-col-box1">
+                <div>
+                  {{> taxSimple}}
+                  {{> cardAssignment}}
+                  {{> relocationServices}}
+
+                </div>
+              </div>
+            </div><!-- main col-->
+            <div class="ey-main--col-2 w-col w-col-4">
+
+              <div>{{> cardPendingActivitiesCheck}}</div>
+              <div>{{> contactCard2}}</div>
+              <div>{{> cardAssistant}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="19px" viewBox="0 0 22 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>22ED66B4-996F-4DA9-8331-82A440E956BB</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Upload-Document" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.8">
+        <g id="Employee-Dashboard---Before-upload" transform="translate(-235.000000, -60.000000)">
+            <g id="Header" transform="translate(226.000000, 15.000000)">
+                <g id="Warning" transform="translate(0.000000, 39.000000)">
+                    <g id="ic_warning" transform="translate(8.000000, 4.000000)">
+                        <polygon id="Bounds" fill-opacity="0" fill="#FF0000" points="0 0 24 0 24 24 0 24"></polygon>
+                        <path d="M1,21 L23,21 L12,2 L1,21 L1,21 Z M13,18 L11,18 L11,16 L13,16 L13,18 L13,18 Z M13,14 L11,14 L11,10 L13,10 L13,14 L13,14 Z" id="Shape" fill="#F04C3E"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

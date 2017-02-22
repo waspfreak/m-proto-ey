@@ -1,0 +1,103 @@
+<template id="" name="imigrationCard">
+
+
+  <div class="card ey-card-container ey-card-container-large card-imi-1" data-ix="show-upload-model" id="upload-alert-card">
+    <div class="ey-card-title ey-card-title_large">
+      <div class="ey-card-title-txt">Immigration <span class="ey-assignment-alert-icon warning"><i class="material-icons warning">warning</i></span></div>
+    </div>
+    <div class="ey-card-content">
+      <p class="ey-card-travel-title">You have outstanding travel actions</p>
+      <p class="ey-card-travel-title--sub">You need to apply for a visa before 12th January 2017</p>
+      <div class="ey-assignment-immigration-alert-container w-row">
+        <div class="" id="ey-upload-passport-link">
+          <div class="ey-assignment-immigration-alert-text w-embed">
+            <span>Please upload a recent copy of your passport or an exisiting work authorising document</span>
+            <a  class="ey-travel-card__btn">
+              <i class="material-icons icon-left">file_upload</i>
+              <span>Upload Passport </span>
+              <i class="material-icons icon-right">chevron_right</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HIDE BOX Imigration card after upload document -->
+
+  <div class="card ey-card-container ey-card-container-large ey-card-container-upload-success card-imi-2 hidden" data-ix="show-upload-model" id="upload-alert-card-success" >
+
+    <div class="ey-card-title ey-card-title_large">
+      <div class="ey-card-title-txt">Immigration</div>
+    </div>
+    <div class="ey-card-content">
+      <div class="ey-card-travel-title" style="    margin-bottom: 20px;">Work permit status </div>
+      <div class="ey-assignment-immigration-alert-container w-row">
+        <div class="w-col w-col-1"><i class="material-icons warning">warning</i>
+          <i class="material-icons check" style="color: #39b54a;     margin-top: 38px;">check_circle</i>
+        </div>
+        <div class="w-col w-col-10">
+          <div class="ey-assignment-immigration-alert-text w-embed">
+            <span>You are not safe to travel for your next trip to Brazil. You will require a work permit before you can travel.</span>
+            <br><br>
+            <span>Passport scan uploaded successfully. We will be in touch soon.</span>
+          </div>
+        </div>
+        <div class="ey-assignment-immigration-right-column w-col w-col-1"></div>
+      </div>
+    </div>
+    <div class="ey-card-large-footer">
+        <a class="ey-card-travel_blue-txt" href="#">View document centre <i class="material-icons chevron_right">chevron_right</i></a>
+    </div>
+  </div>
+
+
+</template>
+
+<!-- <script>
+  var browseModal = document.getElementById('ey-upload-modal-browse');
+  var successModal = document.getElementById('ey-upload-modal-success');
+  var uploadButton = document.getElementById('ey-upload-button');
+  var continueButton = document.getElementById('ey-upload-continue-button');
+  var successCloseIcon = document.getElementById('upload-success-close-icon');
+  var uploadDocumentLink = document.getElementById('ey-upload-passport-link');
+  var uploadActivityIconChecked = document.getElementById('upload-activity-icon-checked');
+  var uploadActivityIconUnchecked = document.getElementById('upload-activity-icon-unchecked');
+  uploadActivityIconChecked.style.display = "none";
+  function updateViewAfterUpload(){
+    var topAlertContainer = document.getElementById('top-alert-container');
+    var uploadAlertCard = document.getElementById('upload-alert-card');
+    var uploadAlertCardSuccess = document.getElementById('upload-alert-card-success');
+    var uploadPassportActivityText = document.getElementById('upload-passport-activity-text');
+    var uploadActivityStatusText = document.getElementById('upload-activity-status-text');
+    //Strikethrough text
+    uploadPassportActivityText.style.setProperty("text-decoration", "line-through");
+    //Hide alert card , show success card
+    uploadAlertCard.style.display = "none";
+    uploadAlertCardSuccess.style.display = "block";
+    //Hide top alert text
+    topAlertContainer.style.visibility = "hidden";
+    //Show checked icon
+    uploadActivityIconChecked.style.display = "block";
+    uploadActivityIconUnchecked.style.display = "none";
+    //update status text
+    uploadActivityStatusText.innerHTML = "Submitted just now"
+  }
+  uploadButton.addEventListener("click", function() {
+    successModal.style.display = 'flex';
+    browseModal.style.display = 'none';
+  });
+  function dismissUploadModal(){
+    successModal.style.display = 'none';
+    browseModal.style.display = 'block';
+    updateViewAfterUpload();
+  }
+  successCloseIcon.addEventListener("click", function(){dismissUploadModal()});
+  continueButton.addEventListener("click", function(){dismissUploadModal()});
+  uploadDocumentLink.addEventListener("mouseover", function() {
+    uploadDocumentLink.style.color = '#117cff';
+  });
+  uploadDocumentLink.addEventListener("mouseout", function() {
+    uploadDocumentLink.style.color = '#216bbe';
+  });
+</script> -->

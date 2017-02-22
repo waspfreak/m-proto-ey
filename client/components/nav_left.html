@@ -1,0 +1,16 @@
+<template id="navLeft" name="navLeft">
+  <div class="ey-left-nav_box">
+    <div class="ey-left-navigation">
+      <div class="ey-left-nav-logo-container">
+        <a href="/"><img class="ey-left-nav-logo" height="50" src="/images/logo.svg" width="50"></a>
+      </div>
+      <div id="nav-box">
+        <ul class="ey-left-nav-list w-list-unstyled">
+          {{#each item}}
+            {{> nav}}
+          {{/each}}
+        </ul>
+      </div><!--/id=nav-box -->
+     </div><!--/ey-left-navigation -->
+   </div><!--/ey-left-nav_box -->
+</template>

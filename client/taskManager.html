@@ -1,0 +1,213 @@
+<template id="" name="taskManager">
+  <div class="ey-container-main w-container">
+    <div class="row-main w-row">
+      <div class="col-nav-left w-col w-col-3">
+        <div class="ey-left-nav_box">
+            {{> navMob}}
+        </div>
+      </div>
+      <div class="ey-col-2_right w-col w-col-9">
+        <div class="ey-col-2_right__container">
+          <div class="ey-main-header--container">
+              {{> header}}
+          </div>
+
+          <div class="ey-main-right-row w-row">
+            <div class="ey-main-right-col-1 w-col w-col-12">
+              <div class="taskManager">
+                <div class="ey-header-task_manager ">
+                  <h1 class="ey-task-header_h1">Task Manager</h1>
+                  <div class="card card ey-card-container ey-card-container-large ey-header-task_links">
+                    <h2 class="ey-task-header_h2 ey-card-title ey-card-title_large">Frequently Used Services</h2>
+                      <div class="ey-task-btn-container">
+                        <a class="ey-btn-grey w-inline-block" href="#">
+                          <span class="ey-btn-grey_txt">Tax Cost Estimator</span>
+                        </a>
+                        <a class="ey-btn-grey w-inline-block" href="#">
+                          <span class="ey-btn-grey_txt">Initiate New Assignment</span>
+                        </a>
+                        <a class="ey-btn-grey w-inline-block" href="#">
+                          <span class="ey-btn-grey_txt">Compensation Tool</span>
+                        </a>
+                        <a class="ey-btn-grey w-inline-block no-margin" href="#">
+                          <span class="ey-btn-grey_txt">Initiate Payroll Instruction</span>
+                        </a>
+                        <a class="ey-btn-grey w-inline-block" href="#">
+                          <span class="ey-btn-grey_txt">Tax Liabilitiy and Payments</span>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="table">
+                  <div class="ey-main-task-manager">
+                    <div class="ey-task-manager-row" style='border-bottom: 1px solid #ffe600'>
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="ey-task-manager-wrapper-cel--text title"><h3 class="ey-header-task_h3">Task List</h3></div>
+
+                        <div class="ey-task-manager-wrapper-cel--text">
+                          <!-- filter -->
+                          <div class="dropdown_task-manager ey-dropdown-toggle w-dropdown" data-delay="0">
+                            <div class="ey-dropdown-toggle-item w-dropdown-toggle">
+                              <span class="ey-dropdown-title">Filter</span>
+                              <span class="material-icons chevron-dropdow">arrow_drop_down</span>
+                            </div>
+                            <nav class="ey-dropdown-list__item w-dropdown-list"><a class="ey-dropdown-list_item_link w-dropdown-link" href="#">Link 1</a><a class="ey-dropdown-list_item_link w-dropdown-link" href="#">Link 2</a><a class="ey-dropdown-list_item_link last w-dropdown-link" href="#">Link 3</a></nav>
+                          </div>
+                          <!-- filter -->
+                        </div>
+                        <!-- /.ey-task-manager-wrapper-cel text -->
+                        <div class="ey-task-manager-wrapper-cel--text btn-cel">
+                          <a href="#" class="ey-task-btn"><i class="material-icons" style="margin-left: 48px;">add_box</i></a>
+                          <!-- <a class="btn_1 ey-primary-button ey-task-btn_header w-button" href="#">Add</a> -->
+                        </div>
+                        <!-- /.ey-task-manager-wrapper-cel text -->
+                        <div class="ey-task-manager-wrapper-cel--text btn-cel" style="padding-left: 0 !important;;">
+                          <a href="#" class="ey-task-btn"><i class="material-icons" style="    margin-left: -13px;">create</i></a>
+                          <!-- <a class="ey-primary-button ey-task-btn_header w-button" href="#">Edit</a> -->
+                        </div>
+                        <!-- /.ey-task-manager-wrapper-cel text -->
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title"><a class="ey-task-manager-line_title" href="#">Action</a></div>
+                        <div class="title-cel date"><a class="ey-task-manager-line_title" href="#">Due Date</a><i class="date material-icons">arrow_upward</i></div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_title" href="#">Assigned To</a></div>
+                        <div class="title-cel title-cel service"><a class="ey-task-manager-line_title" href="#">Service</a></div>
+                        <div class="title-cel status"><a class="ey-task-manager-line_title" href="#">Status</a></div>
+                        <div class="title-cel key-contact"><a class="ey-task-manager-line_title" href="#">Key Contact</a></div>
+                        <div class="title-cel action"><a class="ey-task-manager-line_title" href="#">Action</a></div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title">
+                          <p class="ey-task-manager-line_txt">Authorisation approval for Alfonzo Fonzorelli</p>
+                        </div>
+                        <div class="title-cel date">27/01/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Tax</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Immigration</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending Approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Richard Fort <br/> Tax Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix w-dropdown" data-delay="0">
+                              <div class="ey-task-dropdow_action w-dropdown-toggle">
+                                <div><span class="material-icons">more_horiz</span></div>
+                              </div>
+                              {{> dropdowTaskmanager}}
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title">
+                          <p class="ey-task-manager-line_txt">Out of scope approval</p>
+                        </div>
+                        <div class="title-cel date">29/01/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Stefan Wulf</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Out of Scope</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending Approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Emily Warren Mobility Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix w-dropdown" data-delay="0">
+                              <div class="ey-task-dropdow_action w-dropdown-toggle">
+                                <div><span class="material-icons">more_horiz</span></div>
+                              </div>
+                              {{> dropdowTaskmanager}}
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title">
+                          <p class="ey-task-manager-line_txt">Compensation payment approval</p>
+                        </div>
+                        <div class="title-cel date">01/02/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Jennifer Keller</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Compensation</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending Approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Mark VanRees Payroll Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix w-dropdown" data-delay="0">
+                              <div class="ey-task-dropdow_action w-dropdown-toggle">
+                                <div><span class="material-icons">more_horiz</span></div>
+                              </div>
+                              {{> dropdowTaskmanager}}
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title">
+                          <p class="ey-task-manager-line_txt">Document request</p>
+                        </div>
+                        <div class="title-cel date">01/02/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Surbhi Patel</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Immigration</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Open</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Emily Warren Mobility Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix w-dropdown" data-delay="0">
+                              <div class="ey-task-dropdow_action w-dropdown-toggle">
+                                <div><span class="material-icons">more_horiz</span></div>
+                              </div>
+                              {{> dropdowTaskmanager}}
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                    <div class="ey-task-manager-row">
+                      <div class="ey-task-manager-wrapper-cel">
+                        <div class="title-cel title">
+                          <p class="ey-task-manager-line_txt">Tax refund approval for Emanule Eboue</p>
+                        </div>
+                        <div class="title-cel date">06/02/2017</div>
+                        <div class="title-cel assigned"><a class="ey-task-manager-line_txt link" href="#">Edward Williams</a></div>
+                        <div class="title-cel service"><p class="ey-task-manager-line_txt">Tax</p></div>
+                          <div class="title-cel status">
+                            <p class="ey-task-manager-line_txt">Pending Approval</p>
+                          </div>
+                          <div class="title-cel key-contact">
+                            <a class="ey-task-manager-line_txt link" href="#">Richard Fort <br/> Tax Manager</a>
+                          </div>
+                          <div class="title-cel action">
+                            <div class="ey-task-dropdow_action--container w-clearfix w-dropdown" data-delay="0">
+                              <div class="ey-task-dropdow_action w-dropdown-toggle">
+                                <div><span class="material-icons">more_horiz</span></div>
+                              </div>
+                              {{> dropdowTaskmanager}}
+                            </div>
+                          </div>
+                      </div><!-- /.ey-task-manager-wrapper-cel -->
+                    </div><!-- /.ey-task-manager-row -->
+                  </div><!-- /.ey-main-task-manager -->
+                </div><!--table -->
+              </div>
+            </div><!-- left main col-12-->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
